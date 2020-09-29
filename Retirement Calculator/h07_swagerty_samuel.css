@@ -1,0 +1,56 @@
+
+
+/*used to center everything on webpage*/
+		.center {
+			margin: auto;
+			display: table;
+		}
+
+		.inputLabels {
+			text-align: center;
+			padding-left: 4px;
+			padding-right: 4px;
+			width: 10em;
+		}
+
+		.alignRight {
+			text-align: right;
+		}
+
+		.inputLabels {
+			width: 90%;
+			text-align: right;
+		}
+
+		.outputTable {
+			background-color: peachpuff;
+			margin: auto;
+			display: table;
+			border: 1px solid black;
+		}
+
+		.outputTable th, .outputTable td {
+			padding-right: 8px;
+			text-align: right;
+		}
+
+		/*seperated buttons by column to style correctly*/
+		#buttonRowOne button{
+			background-color: #bbbbbb;
+			margin: 2px;
+			width: 45%;
+
+		}
+
+		#buttonRowTwo button{
+			background-color: #bbbbbb;
+			margin: 2px;
+			width: 98%;
+
+		}
+		/*Style for table header*/
+		p {
+			margin: auto;
+			display: table;
+			font-weight: bold;
+		}

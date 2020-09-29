@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Make Me Rich!</title>
+	<link rel="stylesheet" type="text/css" href="h07_Swagerty_Samuel.css"></style>
+
+</head>
+<body onload="initialize()">
+	<!-- Beginning of the input form -->
+	<p>Retirement Calculator</p>
+	<form id="inputFormId" class="center">
+		<table>
+			<tr>
+				<td><input type="number" id="startAgeInput" class="inputLabels" value="25" min="1" max="100" step="1"
+							placeholder="starting age" required>
+				</td>
+				<td><input type="number" id="endAgeInput" class="inputLabels" value="65" min="1" max="100" step="1"
+							placeholder="retire age" required>
+				</td>
+			</tr>
+			<tr>
+				<td><input type="number" id="salaryInput" class="inputLabels" value="50000" min="0" max="999999" step="100"
+							placeholder="starting salary" required>
+				</td>
+				<td><input type="number" id="interestInput" class="inputLabels" value=".007" min="0" max="1" step=".001"
+							placeholder="interest earned" required>
+				</td>
+			</tr>
+			<tr>
+				<td><input type="number" id="annualSavingsInput" class="inputLabels" value=".1" step=".01" placeholder="annual savings"></td>
+				<td><input type="number" id="annualRaiseInput" class="inputLabels" value=".02" step=".01" placeholder="annual raise"></td>
+			</tr>
+			<tr>
+				<td id="buttonRowOne">
+					<button type="button" onclick="clearInputs(this.form)">Clear</button>
+					<button type="button" onclick="loadDefaults(this.form)">Defaults</button>
+				</td>
+				<td id="buttonRowTwo">
+					<button type="button" onclick="makeMeRich(this.form)">Make Me Rich!</button>
+				</td>
+			</tr>
+		</table>
+	</form>
+	<!-- Beginning of the first output table -->
+	<table id="chosenValuesTableId" class="center">
+		<tr>
+			<td id="yearsToInvestId" class="alignRight">40</td>
+			<td>Years to Invest</td>
+		</tr>
+		<tr>
+			<td id="retirementFundId" class="alignRight">1,473,440</td>
+			<td>Retirement Fund</td>
+		</tr>
+		<tr>
+			<td id="lifetimeSalaryId" class="alignRight">3,130,501</td>
+			<td>Lifetime Salary</td>
+		</tr>
+		<tr>
+			<td id="totalSavedId" class="alignRight">313,050</td>
+			<td>Total Saved</td>
+		</tr>
+		<tr>
+			<td id="earnedInterestId" class="alignRight" >1,160,390</td>
+			<td>Earned Interest</td>
+		</tr>
+	</table>
+	<!-- Beginning of second output table -->
+	<div class="results"> 
+		<table id="resultsTableId" class="outputTable">
+			<tr class="outputHeaders">
+				<th>Age</th>
+				<th>Salary</th>
+				<th>Savings</th>
+				<th>Interest</th>
+				<th>Retirement</th>
+			</tr>
+			<tr>
+				<td>25</td>
+				<td>50,000</td>
+				<td>5,000</td>
+				<td>350</td>
+				<td>5,350</td>
+			</tr>
+			<tr>
+				<td>26</td>
+				<td>51,000</td>
+				<td>5,100</td>
+				<td>732</td>
+				<td>11,182</td>
+			</tr>
+		</table>
+	</div>
+	
+	<script type="text/javascript" src="./FormattingToolsLibrary.js"></script>
+
+	<script type="text/javascript" src="h07_Swagerty_Samuel.js"></script>
+</body>
+</html>
